@@ -1,0 +1,12 @@
+{
+  "name": "vellikkeel-waves",
+  "version": "1.0.0",
+  "description": "Vellikkeel Waves — houseboat cruises in the Kannur mangroves",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
