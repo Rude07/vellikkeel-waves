@@ -8,7 +8,6 @@ backend:
   name: github
   repo: Rude07/vellikkeel-waves
   branch: main
-  base_url:
 
 site_url: https://www.vellikkeelwaves.in
 display_url: https://www.vellikkeelwaves.in
