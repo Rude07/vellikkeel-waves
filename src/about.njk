@@ -1,0 +1,78 @@
+---
+layout: base.njk
+permalink: /about/
+seoKey: about
+---
+
+{% block extraHead %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "About Us", "item": "{{ site.url }}/about/"}
+  ]
+}
+</script>
+{% endblock %}
+
+<header class="hero short">
+  <img class="hero-img" src="{{ about.hero.image }}" alt="{{ about.hero.imageAlt }}" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <div class="wrap">
+      <p class="hero-kicker"><span class="l-en">{{ about.hero.kicker.en }}</span><span class="l-ml">{{ about.hero.kicker.ml }}</span></p>
+      <h1><span class="l-en">{{ about.hero.heading.en }}</span><span class="l-ml">{{ about.hero.heading.ml }}</span></h1>
+      <p class="hero-sub"><span class="l-en">{{ about.hero.sub.en }}</span><span class="l-ml">{{ about.hero.sub.ml }}</span></p>
+    </div>
+  </div>
+</header>
+
+<section class="wrap section section-first">
+  <div class="split">
+    <div>
+      <p class="kicker"><span class="l-en">Our story</span><span class="l-ml">ഞങ്ങളുടെ കഥ</span></p>
+      <h2><span class="l-en">{{ about.story.heading.en }}</span><span class="l-ml">{{ about.story.heading.ml }}</span></h2>
+      {% for p in about.story.paragraphs %}
+      <p class="split-body"><span class="l-en">{{ p.en }}</span><span class="l-ml">{{ p.ml }}</span></p>
+      {% endfor %}
+    </div>
+    <img class="split-img" src="{{ about.story.image }}" alt="{{ about.story.imageAlt }}" loading="lazy">
+  </div>
+</section>
+
+<section class="wrap section">
+  <p class="kicker"><span class="l-en">{{ about.team.kicker.en }}</span><span class="l-ml">{{ about.team.kicker.ml }}</span></p>
+  <h2 class="section-h" style="margin-bottom:26px"><span class="l-en">{{ about.team.heading.en }}</span><span class="l-ml">{{ about.team.heading.ml }}</span></h2>
+  <div class="team-grid">
+    {% for m in about.team.members %}
+    <div class="team-card">
+      <img src="{{ m.photo }}" alt="{{ m.name }} — {{ m.role.en }} at Vellikkeel Waves" loading="lazy" width="120" height="120">
+      <h3>{{ m.name }}</h3>
+      <span class="role"><span class="l-en">{{ m.role.en }}</span><span class="l-ml">{{ m.role.ml }}</span></span>
+      <p class="bio"><span class="l-en">{{ m.bio.en }}</span><span class="l-ml">{{ m.bio.ml }}</span></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-h" style="margin-bottom:22px"><span class="l-en">{{ about.values.heading.en }}</span><span class="l-ml">{{ about.values.heading.ml }}</span></h2>
+  <div class="values-grid">
+    {% for v in about.values.items %}
+    <div class="value-card c-{{ v.color }}">
+      <h3><span class="l-en">{{ v.title.en }}</span><span class="l-ml">{{ v.title.ml }}</span></h3>
+      <p><span class="l-en">{{ v.desc.en }}</span><span class="l-ml">{{ v.desc.ml }}</span></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section" style="padding-bottom:80px">
+  <div class="cta-band">
+    <h2><span class="l-en">Come cruise with us</span><span class="l-ml">ഞങ്ങളോടൊപ്പം ഒരു യാത്ര</span></h2>
+    <p><span class="l-en">Message us on WhatsApp and we'll plan your trip on the Vellikkeel river.</span><span class="l-ml">വാട്സ്ആപ്പിൽ മെസേജ് ചെയ്യൂ — നിങ്ങളുടെ യാത്ര ഞങ്ങൾ പ്ലാൻ ചെയ്യാം.</span></p>
+    <a href="https://wa.me/{{ site.whatsappNumber | waDigits }}?text={{ site.whatsappGreeting | urlencode }}" target="_blank" rel="noopener" class="btn btn-green"><span class="l-en">WhatsApp us</span><span class="l-ml">വാട്സ്ആപ്പ് ചെയ്യൂ</span></a>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+{
+  "name": "Vellikkeel Waves",
+  "legalName": "Vellikkeel Eco Tourism Private Limited",
+  "tagline": {
+    "en": "A Cruise in the Mangroves",
+    "ml": "കണ്ടൽക്കാടുകളിലൂടെ ഒരു യാത്ര"
+  },
+  "url": "https://www.vellikkeelwaves.in",
+  "logo": "/uploads/VELLIKKEEL_WAVES_LOGO_1.png",
+  "ogImage": "/uploads/VELLIKKEEL_WAVES_LOGO_1.png",
+  "whatsappNumber": "91 99476 71440",
+  "whatsappGreeting": "Hi Vellikkeel Waves! I would like to know more about your cruises.",
+  "phone1": "+91 99476 71440",
+  "phone2": "+91 94003 89030",
+  "email": "",
+  "address": "284P+53, Pattuvam, Kannur, Kerala 670331",
+  "mapsUrl": "https://maps.google.com/?q=284P%2B53+Pattuvam+Kerala+670331",
+  "geoLat": "12.0530",
+  "geoLng": "75.4310",
+  "instagram": "https://www.instagram.com/vellikkeelwaves",
+  "facebook": "https://www.facebook.com/VellikkeelWaves/",
+  "defaultLang": "en",
+  "floatingWhatsApp": true,
+  "seo": {
+    "homeTitle": "Vellikkeel Waves — Houseboat & Mangrove Cruises in Kannur, Kerala",
+    "homeDescription": "Houseboat day trips, sunset cruises and overnight stays on the Vellikkeel river near Pattuvam, Kannur — through Kerala's largest undisturbed mangrove belt. Book on WhatsApp.",
+    "aboutTitle": "About Us & Our Team — Vellikkeel Waves, Kannur",
+    "aboutDescription": "Meet the local crew behind Vellikkeel Waves — the team running houseboat cruises through the Vellikkeel mangroves in Kannur, Kerala. Our story, our river, our people.",
+    "keywords": "Vellikkeel Waves, houseboat Kannur, mangrove cruise Kerala, Vellikkeel eco park, Pattuvam boating, sunset cruise Kannur, Kerala backwater Kannur, kandal kadu boat"
+  }
+}

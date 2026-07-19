@@ -1,0 +1,171 @@
+---
+layout: base.njk
+permalink: /
+seoKey: home
+---
+
+<header id="top" class="hero">
+  <img class="hero-img" src="{{ home.hero.image }}" alt="{{ home.hero.imageAlt }}" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <div class="wrap">
+      <p class="hero-kicker"><span class="l-en">{{ home.hero.kicker.en }}</span><span class="l-ml">{{ home.hero.kicker.ml }}</span></p>
+      <h1><span class="l-en">{{ home.hero.heading.en }}</span><span class="l-ml">{{ home.hero.heading.ml }}</span></h1>
+      <p class="hero-sub"><span class="l-en">{{ home.hero.sub.en }}</span><span class="l-ml">{{ home.hero.sub.ml }}</span></p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/{{ site.whatsappNumber | waDigits }}?text={{ site.whatsappGreeting | urlencode }}" target="_blank" rel="noopener" class="btn btn-green"><span class="l-en">WhatsApp us</span><span class="l-ml">വാട്സ്ആപ്പ് ചെയ്യൂ</span></a>
+        <a href="tel:{{ site.phone1 | replace(' ', '') }}" class="btn btn-ghost"><span class="l-en">Call {{ site.phone1 }}</span><span class="l-ml">വിളിക്കൂ {{ site.phone1 }}</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="cruises" class="wrap section section-first section-tight-b">
+  <p class="kicker"><span class="l-en">{{ home.cruisesIntro.kicker.en }}</span><span class="l-ml">{{ home.cruisesIntro.kicker.ml }}</span></p>
+  <h2 class="section-h"><span class="l-en">{{ home.cruisesIntro.heading.en }}</span><span class="l-ml">{{ home.cruisesIntro.heading.ml }}</span></h2>
+  <p class="section-sub"><span class="l-en">{{ home.cruisesIntro.sub.en }}</span><span class="l-ml">{{ home.cruisesIntro.sub.ml }}</span></p>
+  <div class="grid grid-cards">
+    {% for c in home.cruises %}
+    <div class="card">
+      <img class="card-img" src="{{ c.image }}" alt="{{ c.imageAlt }}" loading="lazy" width="400" height="165">
+      <div class="card-body">
+        <h3><span class="l-en">{{ c.title.en }}</span><span class="l-ml">{{ c.title.ml }}</span></h3>
+        <p><span class="l-en">{{ c.desc.en }}</span><span class="l-ml">{{ c.desc.ml }}</span></p>
+        <div class="tags">
+          {% for t in c.tags %}<span class="tag tag-{{ c.accent }}"><span class="l-en">{{ t.en }}</span><span class="l-ml">{{ t.ml }}</span></span>{% endfor %}
+        </div>
+        <a href="#plan" class="card-link"><span class="l-en">Enquire →</span><span class="l-ml">അന്വേഷിക്കൂ →</span></a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="about" class="wrap section">
+  <div class="split">
+    <img class="split-img" src="{{ home.about.image }}" alt="{{ home.about.imageAlt }}" loading="lazy">
+    <div>
+      <p class="kicker"><span class="l-en">{{ home.about.kicker.en }}</span><span class="l-ml">{{ home.about.kicker.ml }}</span></p>
+      <h2><span class="l-en">{{ home.about.heading.en }}</span><span class="l-ml">{{ home.about.heading.ml }}</span></h2>
+      <p class="split-body"><span class="l-en">{{ home.about.body.en }}</span><span class="l-ml">{{ home.about.body.ml }}</span></p>
+      <div class="points">
+        {% for p in home.about.points %}
+        <div class="point"><span class="dot dot-{{ p.color }}"></span><span><span class="l-en">{{ p.en }}</span><span class="l-ml">{{ p.ml }}</span></span></div>
+        {% endfor %}
+      </div>
+      <p style="margin-top:18px"><a href="/about/" class="card-link"><span class="l-en">Meet the team behind Vellikkeel Waves →</span><span class="l-ml">ഞങ്ങളുടെ ടീമിനെ പരിചയപ്പെടൂ →</span></a></p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="wrap section">
+  <p class="kicker"><span class="l-en">{{ home.gallery.kicker.en }}</span><span class="l-ml">{{ home.gallery.kicker.ml }}</span></p>
+  <h2 class="section-h" style="margin-bottom:24px"><span class="l-en">{{ home.gallery.heading.en }}</span><span class="l-ml">{{ home.gallery.heading.ml }}</span></h2>
+  <div class="gallery-grid">
+    {% for g in home.gallery.items %}
+    <div class="g-item{% if g.size == 'big' %} g-big{% elif g.size == 'wide' %} g-wide{% endif %}">
+      <img src="{{ g.image }}" alt="{{ g.alt }}" loading="lazy">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="reviews" class="reviews-band">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div>
+        <p class="kicker"><span class="l-en">{{ home.reviews.kicker.en }}</span><span class="l-ml">{{ home.reviews.kicker.ml }}</span></p>
+        <h2 class="section-h" style="margin-bottom:0"><span class="l-en">{{ home.reviews.heading.en }}</span><span class="l-ml">{{ home.reviews.heading.ml }}</span></h2>
+      </div>
+      <div class="rating-pill">{{ home.reviews.rating }} <span class="stars">★★★★★</span> <span class="note"><span class="l-en">{{ home.reviews.ratingNote.en }}</span><span class="l-ml">{{ home.reviews.ratingNote.ml }}</span></span></div>
+    </div>
+    <div class="reviews-grid">
+      {% for r in home.reviews.items %}
+      <figure class="review">
+        <div class="stars">★★★★★</div>
+        <blockquote>"{{ r.quote }}"</blockquote>
+        <figcaption>
+          <span class="avatar avatar-{{ r.color }}">{{ r.name | first | upper }}</span>
+          <span class="who"><strong>{{ r.name }}</strong><span>{{ r.meta }}</span></span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="food" class="wrap section section-tight-b" style="padding-top:70px">
+  <p class="kicker"><span class="l-en">{{ home.food.kicker.en }}</span><span class="l-ml">{{ home.food.kicker.ml }}</span></p>
+  <h2 class="section-h"><span class="l-en">{{ home.food.heading.en }}</span><span class="l-ml">{{ home.food.heading.ml }}</span></h2>
+  <p class="section-sub" style="max-width:620px"><span class="l-en">{{ home.food.sub.en }}</span><span class="l-ml">{{ home.food.sub.ml }}</span></p>
+  <div class="food-grid">
+    {% for f in home.food.items %}
+    <div class="food-item">
+      <img src="{{ f.image }}" alt="{{ f.name.en }}" loading="lazy" width="130" height="130">
+      <strong><span class="l-en">{{ f.name.en }}</span><span class="l-ml">{{ f.name.ml }}</span></strong>
+      <span class="desc"><span class="l-en">{{ f.desc.en }}</span><span class="l-ml">{{ f.desc.ml }}</span></span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section section-tight-b" style="padding-top:50px">
+  <div class="info-grid">
+    <div class="info-card">
+      <h3><span class="l-en">{{ home.safety.heading.en }}</span><span class="l-ml">{{ home.safety.heading.ml }}</span></h3>
+      <div class="info-list">
+        {% for i in home.safety.items %}
+        <div><span class="check">✓</span><span><span class="l-en">{{ i.en }}</span><span class="l-ml">{{ i.ml }}</span></span></div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="info-card">
+      <h3><span class="l-en">{{ home.bring.heading.en }}</span><span class="l-ml">{{ home.bring.heading.ml }}</span></h3>
+      <div class="info-list">
+        {% for i in home.bring.items %}
+        <div><span class="bullet">•</span><span><span class="l-en">{{ i.en }}</span><span class="l-ml">{{ i.ml }}</span></span></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plan" class="wrap section" style="padding-bottom:80px">
+  <p class="kicker"><span class="l-en">{{ home.plan.kicker.en }}</span><span class="l-ml">{{ home.plan.kicker.ml }}</span></p>
+  <h2 class="section-h" style="margin-bottom:26px"><span class="l-en">{{ home.plan.heading.en }}</span><span class="l-ml">{{ home.plan.heading.ml }}</span></h2>
+  <div class="plan-grid">
+    <div>
+      <div class="map-embed">
+        <iframe title="Map — Vellikkeel Waves, Pattuvam" src="https://maps.google.com/maps?q={{ site.geoLat }},{{ site.geoLng }}&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p style="margin:12px 0 0"><a href="{{ site.mapsUrl }}" target="_blank" rel="noopener" class="btn btn-blue"><span class="l-en">Open in Google Maps</span><span class="l-ml">Google Maps-ൽ തുറക്കൂ</span></a></p>
+      <div class="transport">
+        {% for t in home.plan.transport %}
+        <div><strong><span class="l-en">{{ t.mode.en }}</span><span class="l-ml">{{ t.mode.ml }}</span></strong><span><span class="l-en">{{ t.detail.en }}</span><span class="l-ml">{{ t.detail.ml }}</span></span></div>
+        {% endfor %}
+      </div>
+    </div>
+    <form id="enquiryForm" class="enquiry">
+      <h3><span class="l-en">Send an enquiry</span><span class="l-ml">അന്വേഷണം അയയ്ക്കൂ</span></h3>
+      <label><span><span class="l-en">Name</span><span class="l-ml">പേര്</span></span><input id="f-name" required autocomplete="name"></label>
+      <div class="f-row">
+        <label><span><span class="l-en">Phone</span><span class="l-ml">ഫോൺ</span></span><input id="f-phone" type="tel" required autocomplete="tel"></label>
+        <label><span><span class="l-en">Date</span><span class="l-ml">തീയതി</span></span><input id="f-date" type="date"></label>
+      </div>
+      <div class="f-row">
+        <label><span><span class="l-en">Guests</span><span class="l-ml">അതിഥികൾ</span></span><input id="f-guests" type="number" min="1"></label>
+        <label><span><span class="l-en">Cruise</span><span class="l-ml">ക്രൂയിസ്</span></span>
+          <select id="f-cruise">
+            {% for c in home.cruises %}<option>{{ c.title.en }}</option>{% endfor %}
+          </select>
+        </label>
+      </div>
+      <label><span><span class="l-en">Message (optional)</span><span class="l-ml">സന്ദേശം (നിർബന്ധമില്ല)</span></span><textarea id="f-msg" rows="3"></textarea></label>
+      <button type="submit"><span class="l-en">Send on WhatsApp</span><span class="l-ml">വാട്സ്ആപ്പിൽ അയയ്ക്കൂ</span></button>
+      <div class="phones">
+        <a href="tel:{{ site.phone1 | replace(' ', '') }}">☎ {{ site.phone1 }}</a><span style="color:#c9bea3">|</span><a href="tel:{{ site.phone2 | replace(' ', '') }}">☎ {{ site.phone2 }}</a>
+      </div>
+      <p class="note"><span class="l-en">{{ home.plan.note.en }}</span><span class="l-ml">{{ home.plan.note.ml }}</span></p>
+    </form>
+  </div>
+</section>

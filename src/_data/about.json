@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "kicker": { "en": "Our story", "ml": "ഞങ്ങളുടെ കഥ" },
+    "heading": { "en": "The people behind the waves", "ml": "വെള്ളിക്കീൽ വേവ്സിന് പിന്നിലെ ആളുകൾ" },
+    "sub": {
+      "en": "Vellikkeel Waves is run by people who grew up on this river. Here's who welcomes you aboard.",
+      "ml": "ഈ പുഴയോരത്ത് വളർന്നവരാണ് വെള്ളിക്കീൽ വേവ്സ് നടത്തുന്നത്. നിങ്ങളെ സ്വാഗതം ചെയ്യുന്നവരെ പരിചയപ്പെടൂ."
+    },
+    "image": "/uploads/placeholder-hero.svg",
+    "imageAlt": "The Vellikkeel Waves team at the jetty in Pattuvam, Kannur"
+  },
+  "story": {
+    "heading": { "en": "Born on the Vellikkeel river", "ml": "വെള്ളിക്കീൽ പുഴയിൽ പിറന്നത്" },
+    "paragraphs": [
+      {
+        "en": "Vellikkeel Eco Tourism Private Limited began with a simple idea: the quietest, greenest stretch of Kannur deserved to be seen from the water — gently, by local hands, without disturbing the mangroves that make it special.",
+        "ml": "വെള്ളിക്കീൽ ഇക്കോ ടൂറിസം പ്രൈവറ്റ് ലിമിറ്റഡ് ഒരു ലളിതമായ ആശയത്തിൽ നിന്നാണ് തുടങ്ങിയത്: കണ്ണൂരിലെ ഏറ്റവും ശാന്തവും പച്ചപ്പുനിറഞ്ഞതുമായ ഈ പ്രദേശം വെള്ളത്തിൽ നിന്ന് കാണേണ്ടതാണ് — കണ്ടൽക്കാടുകളെ ശല്യപ്പെടുത്താതെ, നാട്ടുകാരുടെ കൈകളാൽ."
+      },
+      {
+        "en": "Every member of our crew is from the villages around Pattuvam and Vellikkeel. They know each bend of the river, where the kingfishers nest, and exactly when the evening light turns the water gold.",
+        "ml": "ഞങ്ങളുടെ ഓരോ ജീവനക്കാരനും പട്ടുവത്തിനും വെള്ളിക്കീലിനും ചുറ്റുമുള്ള ഗ്രാമങ്ങളിൽ നിന്നുള്ളവരാണ്. പുഴയുടെ ഓരോ വളവും, പൊന്മാൻ കൂടുകെട്ടുന്നിടവും, സന്ധ്യാവെളിച്ചം വെള്ളത്തെ സ്വർണ്ണമാക്കുന്ന നിമിഷവും അവർക്കറിയാം."
+    }
+    ],
+    "image": "/uploads/placeholder-tall.svg",
+    "imageAlt": "Vellikkeel river winding through the mangrove forest"
+  },
+  "team": {
+    "kicker": { "en": "The team", "ml": "ടീം" },
+    "heading": { "en": "Meet the crew", "ml": "ഞങ്ങളുടെ ടീമിനെ പരിചയപ്പെടൂ" },
+    "members": [
+      {
+        "name": "Team Member Name",
+        "role": { "en": "Founder & Director", "ml": "സ്ഥാപകൻ & ഡയറക്ടർ" },
+        "bio": {
+          "en": "Replace this with a short two-line bio — what they do at Vellikkeel Waves and their connection to the river.",
+          "ml": "രണ്ട് വരിയിൽ ഒരു ചെറിയ പരിചയം ഇവിടെ ചേർക്കുക."
+        },
+        "photo": "/uploads/placeholder-person.svg"
+      },
+      {
+        "name": "Team Member Name",
+        "role": { "en": "Head Boat Captain", "ml": "പ്രധാന ബോട്ട് ക്യാപ്റ്റൻ" },
+        "bio": {
+          "en": "Replace this with a short two-line bio — years on the river, what guests love about them.",
+          "ml": "രണ്ട് വരിയിൽ ഒരു ചെറിയ പരിചയം ഇവിടെ ചേർക്കുക."
+        },
+        "photo": "/uploads/placeholder-person.svg"
+      },
+      {
+        "name": "Team Member Name",
+        "role": { "en": "Jetty Kitchen Lead", "ml": "ജെട്ടി അടുക്കള ചുമതല" },
+        "bio": {
+          "en": "Replace this with a short two-line bio — the person behind the crab puttu and river fish fry.",
+          "ml": "രണ്ട് വരിയിൽ ഒരു ചെറിയ പരിചയം ഇവിടെ ചേർക്കുക."
+        },
+        "photo": "/uploads/placeholder-person.svg"
+      },
+      {
+        "name": "Team Member Name",
+        "role": { "en": "Guest Relations & Bookings", "ml": "ബുക്കിംഗ് & അതിഥി സേവനം" },
+        "bio": {
+          "en": "Replace this with a short two-line bio — the voice on WhatsApp who plans every trip.",
+          "ml": "രണ്ട് വരിയിൽ ഒരു ചെറിയ പരിചയം ഇവിടെ ചേർക്കുക."
+        },
+        "photo": "/uploads/placeholder-person.svg"
+      }
+    ]
+  },
+  "values": {
+    "heading": { "en": "What we stand for", "ml": "ഞങ്ങളുടെ മൂല്യങ്ങൾ" },
+    "items": [
+      {
+        "title": { "en": "Protect the mangroves", "ml": "കണ്ടൽക്കാടുകളെ സംരക്ഷിക്കുക" },
+        "desc": { "en": "Slow boats, no litter, no loud music — the forest comes first, always.", "ml": "പതുക്കെ ഓടുന്ന ബോട്ടുകൾ, മാലിന്യമില്ല, ഉച്ചത്തിലുള്ള സംഗീതമില്ല — കാടിനാണ് എപ്പോഴും മുൻഗണന." },
+        "color": "green"
+      },
+      {
+        "title": { "en": "Local first", "ml": "നാട്ടുകാർക്ക് മുൻഗണന" },
+        "desc": { "en": "Local crew, local food, local stories — your visit supports families in Pattuvam.", "ml": "നാട്ടുകാരായ ജീവനക്കാർ, നാടൻ ഭക്ഷണം, നാട്ടുകഥകൾ — നിങ്ങളുടെ സന്ദർശനം പട്ടുവത്തെ കുടുംബങ്ങളെ പിന്തുണയ്ക്കുന്നു." },
+        "color": "blue"
+      },
+      {
+        "title": { "en": "Safety without fuss", "ml": "സുരക്ഷ ഉറപ്പ്" },
+        "desc": { "en": "Life jackets for all, weather calls made early, and a crew that never takes chances.", "ml": "എല്ലാവർക്കും ലൈഫ് ജാക്കറ്റുകൾ, കാലാവസ്ഥ നേരത്തെ വിലയിരുത്തും, ഒരിക്കലും റിസ്ക് എടുക്കാത്ത ടീം." },
+        "color": "red"
+      }
+    ]
+  }
+}

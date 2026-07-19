@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if seoKey == "home" %}{% set pageTitle = site.seo.homeTitle %}{% set pageDescription = site.seo.homeDescription %}{% elif seoKey == "about" %}{% set pageTitle = site.seo.aboutTitle %}{% set pageDescription = site.seo.aboutDescription %}{% else %}{% set pageTitle = customTitle %}{% set pageDescription = customDescription %}{% endif %}
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}">
+<meta name="keywords" content="{{ site.seo.keywords }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="ml_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ pageTitle }}">
+<meta name="twitter:description" content="{{ pageDescription }}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
+
+<link rel="icon" type="image/png" href="{{ site.logo }}">
+<link rel="apple-touch-icon" href="{{ site.logo }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["TouristAttraction", "LocalBusiness"],
+  "@id": "{{ site.url }}/#business",
+  "name": "{{ site.name }}",
+  "alternateName": "{{ site.legalName }}",
+  "description": "{{ site.seo.homeDescription }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}{{ site.logo }}",
+  "image": "{{ site.url }}{{ site.ogImage }}",
+  "telephone": "{{ site.phone1 }}",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vellikkeel, Pattuvam",
+    "addressLocality": "Kannur",
+    "addressRegion": "Kerala",
+    "postalCode": "670331",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ site.geoLat }}",
+    "longitude": "{{ site.geoLng }}"
+  },
+  "hasMap": "{{ site.mapsUrl }}",
+  "sameAs": ["{{ site.instagram }}", "{{ site.facebook }}"],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Day cruise"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sunset cruise"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Overnight houseboat stay"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Events and group bookings"}}
+  ]
+}
+</script>
+{% block extraHead %}{% endblock %}
+</head>
+<body{% if site.defaultLang == "ml" %} class="ml"{% endif %}>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <img src="{{ site.logo }}" alt="{{ site.name }} logo" width="52" height="52">
+      <span class="brand-text">
+        <span class="brand-name">{{ site.name }}</span>
+        <span class="brand-tag"><span class="l-en">{{ site.tagline.en }}</span><span class="l-ml">{{ site.tagline.ml }}</span></span>
+      </span>
+    </a>
+    <div class="navlinks">
+      <a href="/#cruises"><span class="l-en">Cruises</span><span class="l-ml">ക്രൂയിസുകൾ</span></a>
+      <a href="/#gallery"><span class="l-en">Gallery</span><span class="l-ml">ഗാലറി</span></a>
+      <a href="/#reviews"><span class="l-en">Reviews</span><span class="l-ml">അഭിപ്രായങ്ങൾ</span></a>
+      <a href="/about/"><span class="l-en">About&nbsp;Us</span><span class="l-ml">ഞങ്ങളെക്കുറിച്ച്</span></a>
+      <a href="/#plan"><span class="l-en">Visit</span><span class="l-ml">എത്തിച്ചേരാൻ</span></a>
+    </div>
+    <button id="langToggle" class="lang-btn" type="button" aria-label="Switch language"><span class="l-en">മലയാളം</span><span class="l-ml">English</span></button>
+    <a href="/#plan" class="btn btn-red nav-cta"><span class="l-en">Enquire</span><span class="l-ml">അന്വേഷിക്കൂ</span></a>
+  </div>
+</nav>
+
+{{ content | safe }}
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <img src="{{ site.logo }}" alt="{{ site.name }} logo" width="62" height="62" loading="lazy">
+        <span>{{ site.name }}</span>
+      </div>
+      <p><span class="l-en">A cruise in the mangroves — {{ site.legalName }}.</span><span class="l-ml">കണ്ടൽക്കാടുകളിലൂടെ ഒരു യാത്ര — വെള്ളിക്കീൽ ഇക്കോ ടൂറിസം പ്രൈവറ്റ് ലിമിറ്റഡ്.</span></p>
+    </div>
+    <div class="footer-col">
+      <strong><span class="l-en">Contact</span><span class="l-ml">ബന്ധപ്പെടുക</span></strong>
+      <a href="tel:{{ site.phone1 | replace(' ', '') }}">{{ site.phone1 }}</a>
+      <a href="tel:{{ site.phone2 | replace(' ', '') }}">{{ site.phone2 }}</a>
+      <span>{{ site.address }}</span>
+      <span>www.vellikkeelwaves.in</span>
+    </div>
+    <div class="footer-col">
+      <strong><span class="l-en">Explore</span><span class="l-ml">കൂടുതൽ</span></strong>
+      <a href="/about/"><span class="l-en">About Us &amp; Team</span><span class="l-ml">ഞങ്ങളെക്കുറിച്ച്</span></a>
+      <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a>
+      <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://wa.me/{{ site.whatsappNumber | waDigits }}?text={{ site.whatsappGreeting | urlencode }}" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <p>© 2026 {{ site.legalName }} · Kannur Dist., Kerala PIN 670331</p>
+  </div>
+</footer>
+
+{% if site.floatingWhatsApp %}
+<a href="https://wa.me/{{ site.whatsappNumber | waDigits }}?text={{ site.whatsappGreeting | urlencode }}" target="_blank" rel="noopener" class="float-wa"><span class="l-en">WhatsApp us</span><span class="l-ml">വാട്സ്ആപ്പ്</span></a>
+{% endif %}
+
+<script>window.VW = { wa: "{{ site.whatsappNumber | waDigits }}" };</script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>
