@@ -217,3 +217,61 @@ body.ml .l-en { display: none; }
 /* 404 */
 .notfound { text-align: center; padding: 110px 24px; }
 .notfound h1 { font-size: 60px; margin: 0; }
+/* ===== Mobile polish (max-width: 640px) ===== */
+html, body { overflow-x: clip; }
+h1, h2, h3 { overflow-wrap: break-word; }
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 20px; }
+
+  /* Navigation: prevent horizontal overflow */
+  .nav-inner { padding: 8px 14px; gap: 8px; }
+  .brand img { height: 40px; width: 40px; }
+  .brand-name { font-size: 16px; }
+  .lang-btn { margin-left: auto; padding: 6px 12px; font-size: 12px; }
+
+  /* Hero */
+  .hero { height: 500px; }
+  .hero.short { height: 380px; }
+  .hero h1 { font-size: 30px; }
+  .hero-sub { font-size: 15.5px; }
+  .hero-content .wrap { padding-bottom: 36px; }
+
+  /* Sections & headings */
+  .section { padding: 44px 0; }
+  .section-first { padding-top: 52px; }
+  .section-h { font-size: 27px; }
+  .split h2 { font-size: 25px; }
+  .split { gap: 24px; }
+  .split-img { height: 240px; }
+  .section-sub { font-size: 14.5px; }
+
+  /* Gallery */
+  .gallery-grid { grid-auto-rows: 110px; gap: 8px; }
+
+  /* Reviews header stacks */
+  .reviews-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .rating-pill { margin-left: 0; }
+  .reviews-band .wrap { padding-top: 48px; padding-bottom: 48px; }
+
+  /* Enquiry form: single-column fields */
+  .f-row { grid-template-columns: 1fr; }
+  .enquiry { padding: 20px 16px; }
+  .info-card { padding: 20px 18px; }
+
+  /* Team & CTA */
+  .team-card { padding: 20px 16px; }
+  .cta-band { padding: 30px 18px; }
+  .cta-band h2 { font-size: 25px; }
+
+  /* Footer & floating button */
+  .footer-inner { padding: 38px 20px 28px; gap: 24px; }
+  .float-wa { padding: 12px 18px; font-size: 14px; bottom: 16px; right: 16px; }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .brand-name { font-size: 14px; }
+  .hero h1 { font-size: 26px; }
+  .section-h { font-size: 24px; }
+}
