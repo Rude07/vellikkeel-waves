@@ -210,7 +210,7 @@ body.ml .l-en { display: none; }
 .cta-band p { margin: 0 0 22px; color: #b9c8da; font-size: 16px; }
 
 /* Sections spacing */
-.section { padding: 60px 0; }
+.section { padding-top: 60px; padding-bottom: 60px; }
 .section-tight-b { padding-bottom: 30px; }
 .section-first { padding-top: 76px; }
 
@@ -240,7 +240,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .hero-content .wrap { padding-bottom: 36px; }
 
   /* Sections & headings */
-  .section { padding: 44px 0; }
+  .section { padding-top: 44px; padding-bottom: 44px; }
   .section-first { padding-top: 52px; }
   .section-h { font-size: 27px; }
   .split h2 { font-size: 25px; }
