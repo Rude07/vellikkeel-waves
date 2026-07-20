@@ -1,4 +1,4 @@
-/* Vellikkeel Waves — design system extracted from original mockup */
+/* Vellikkeel Waves â€” design system extracted from original mockup */
 :root {
   --cream: #fbf7ec;
   --cream-2: #fdfbf4;
@@ -217,14 +217,16 @@ body.ml .l-en { display: none; }
 /* 404 */
 .notfound { text-align: center; padding: 110px 24px; }
 .notfound h1 { font-size: 60px; margin: 0; }
-/* ===== Mobile polish (max-width: 640px) ===== */
-html, body { overflow-x: clip; }
+
+/* ===== Mobile responsiveness ===== */
+html, body { overflow-x: hidden; }
 h1, h2, h3 { overflow-wrap: break-word; }
+.map-embed iframe { max-width: 100%; }
 
 @media (max-width: 640px) {
   .wrap { padding: 0 20px; }
 
-  /* Navigation: prevent horizontal overflow */
+  /* Navigation */
   .nav-inner { padding: 8px 14px; gap: 8px; }
   .brand img { height: 40px; width: 40px; }
   .brand-name { font-size: 16px; }
@@ -249,17 +251,15 @@ h1, h2, h3 { overflow-wrap: break-word; }
   /* Gallery */
   .gallery-grid { grid-auto-rows: 110px; gap: 8px; }
 
-  /* Reviews header stacks */
+  /* Reviews */
   .reviews-head { flex-direction: column; align-items: flex-start; gap: 10px; }
   .rating-pill { margin-left: 0; }
   .reviews-band .wrap { padding-top: 48px; padding-bottom: 48px; }
 
-  /* Enquiry form: single-column fields */
+  /* Enquiry form & cards */
   .f-row { grid-template-columns: 1fr; }
   .enquiry { padding: 20px 16px; }
   .info-card { padding: 20px 18px; }
-
-  /* Team & CTA */
   .team-card { padding: 20px 16px; }
   .cta-band { padding: 30px 18px; }
   .cta-band h2 { font-size: 25px; }
@@ -269,7 +269,6 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .float-wa { padding: 12px 18px; font-size: 14px; bottom: 16px; right: 16px; }
 }
 
-/* Very small phones */
 @media (max-width: 380px) {
   .brand-name { font-size: 14px; }
   .hero h1 { font-size: 26px; }
