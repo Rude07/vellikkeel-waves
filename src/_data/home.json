@@ -1,17 +1,29 @@
 {
   "hero": {
-    "kicker": { "en": "Vellikkeel · Kannur · Kerala", "ml": "വെള്ളിക്കീൽ · കണ്ണൂർ · കേരളം" },
-    "heading": { "en": "A cruise in the mangroves", "ml": "കണ്ടൽക്കാടുകളിലൂടെ ഒരു യാത്ര" },
+    "kicker": {
+      "en": "Vellikkeel · Kannur · Kerala",
+      "ml": "വെള്ളിക്കീൽ · കണ്ണൂർ · കേരളം"
+    },
+    "heading": {
+      "en": "A cruise in the mangroves",
+      "ml": "കണ്ടൽക്കാടുകളിലൂടെ ഒരു യാത്ര"
+    },
     "sub": {
       "en": "Houseboat day trips, sunset cruises and overnight stays on the Vellikkeel river — close enough to touch the roots.",
       "ml": "വെള്ളിക്കീൽ പുഴയിൽ ഹൗസ്ബോട്ട് പകൽയാത്രകൾ, സൂര്യാസ്തമയ ക്രൂയിസുകൾ, രാത്രി താമസം — കണ്ടൽ വേരുകൾ തൊടാവുന്നത്ര അടുത്ത്."
     },
-    "image": "/uploads/placeholder-hero.svg",
+    "image": "/uploads/DJI_0276.MP4.00_00_04_04.Still001.png",
     "imageAlt": "Houseboat gliding through the Vellikkeel mangrove canal in Kannur, Kerala"
   },
   "cruisesIntro": {
-    "kicker": { "en": "What we offer", "ml": "ഞങ്ങൾ ഒരുക്കുന്നത്" },
-    "heading": { "en": "Our cruises", "ml": "ഞങ്ങളുടെ ക്രൂയിസുകൾ" },
+    "kicker": {
+      "en": "What we offer",
+      "ml": "ഞങ്ങൾ ഒരുക്കുന്നത്"
+    },
+    "heading": {
+      "en": "Our cruises",
+      "ml": "ഞങ്ങളുടെ ക്രൂയിസുകൾ"
+    },
     "sub": {
       "en": "No fixed price list — every trip is planned around your group. Send an enquiry and we reply with a quote within the hour.",
       "ml": "നിശ്ചിത നിരക്കുകളില്ല — ഓരോ യാത്രയും നിങ്ങളുടെ ഗ്രൂപ്പിന് അനുസരിച്ച്. അന്വേഷണം അയച്ചാൽ ഒരു മണിക്കൂറിനുള്ളിൽ മറുപടി."
@@ -19,93 +31,189 @@
   },
   "cruises": [
     {
-      "title": { "en": "Day cruise", "ml": "പകൽ ക്രൂയിസ്" },
+      "title": {
+        "en": "Day cruise",
+        "ml": "പകൽ ക്രൂയിസ്"
+      },
       "desc": {
         "en": "Glide through the canals close enough to touch the breathing roots.",
         "ml": "കണ്ടൽ വേരുകൾ തൊടാവുന്നത്ര അടുത്തുകൂടി ഒരു ശാന്തയാത്ര."
       },
-      "image": "/uploads/placeholder-wide.svg",
+      "image": "/uploads/DJI_0252.MP4.00_00_11_18.Still001.png",
       "imageAlt": "Day cruise boat among mangrove roots on the Vellikkeel river",
       "accent": "blue",
       "tags": [
-        { "en": "1–2 hrs", "ml": "1–2 മണിക്കൂർ" },
-        { "en": "Family favourite", "ml": "കുടുംബ പ്രിയം" }
+        {
+          "en": "1–2 hrs",
+          "ml": "1–2 മണിക്കൂർ"
+        },
+        {
+          "en": "Family favourite",
+          "ml": "കുടുംബ പ്രിയം"
+        }
       ]
     },
     {
-      "title": { "en": "Sunset cruise", "ml": "സൂര്യാസ്തമയ ക്രൂയിസ്" },
+      "title": {
+        "en": "Sunset cruise",
+        "ml": "സൂര്യാസ്തമയ ക്രൂയിസ്"
+      },
       "desc": {
         "en": "Golden hour on the water — the light everyone comes back for.",
         "ml": "പുഴയിലെ സ്വർണ്ണനിറമുള്ള സന്ധ്യ — എല്ലാവരും വീണ്ടും വരുന്ന കാഴ്ച."
       },
-      "image": "/uploads/placeholder-wide.svg",
+      "image": "/uploads/DJI_0291.MP4.00_00_28_24.Still001.png",
       "imageAlt": "Sunset cruise during golden hour on the Vellikkeel backwater, Kannur",
       "accent": "amber",
       "tags": [
-        { "en": "Evening", "ml": "വൈകുന്നേരം" },
-        { "en": "Couples' pick", "ml": "ദമ്പതികളുടെ ഇഷ്ടം" }
+        {
+          "en": "Evening",
+          "ml": "വൈകുന്നേരം"
+        },
+        {
+          "en": "Couples' pick",
+          "ml": "ദമ്പതികളുടെ ഇഷ്ടം"
+        }
       ]
     },
     {
-      "title": { "en": "Overnight stay", "ml": "രാത്രി താമസം" },
+      "title": {
+        "en": "Overnight stay",
+        "ml": "രാത്രി താമസം"
+      },
       "desc": {
-        "en": "Sleep on the water, with dinner and breakfast served aboard.",
+        "en": "Sleep on the water, with dinner and breakfast served onboard.",
         "ml": "അത്താഴവും പ്രഭാതഭക്ഷണവുമായി വെള്ളത്തിൽ ഒരു രാത്രി."
       },
-      "image": "/uploads/placeholder-wide.svg",
+      "image": "/uploads/DJI_0296.MP4.00_00_05_24.Still001.png",
       "imageAlt": "Lit houseboat at dusk for an overnight stay on the Vellikkeel river",
       "accent": "green",
       "tags": [
-        { "en": "Dinner + breakfast", "ml": "ഭക്ഷണം ഉൾപ്പെടെ" }
+        {
+          "en": "Dinner + breakfast",
+          "ml": "ഭക്ഷണം ഉൾപ്പെടെ"
+        }
       ]
     },
     {
-      "title": { "en": "Events & groups", "ml": "ഇവന്റുകളും ഗ്രൂപ്പുകളും" },
+      "title": {
+        "en": "Events & groups",
+        "ml": "ഇവന്റുകളും ഗ്രൂപ്പുകളും"
+      },
       "desc": {
         "en": "Birthdays, college trips and corporate days — book the whole boat.",
         "ml": "പിറന്നാളുകൾ, കോളേജ് ട്രിപ്പുകൾ, കോർപ്പറേറ്റ് പരിപാടികൾ — ബോട്ട് മുഴുവനായി ബുക്ക് ചെയ്യാം."
       },
-      "image": "/uploads/placeholder-wide.svg",
+      "image": "/uploads/nyt17.Still001.png",
       "imageAlt": "Group celebration on the deck of a Vellikkeel Waves houseboat",
       "accent": "red",
       "tags": [
-        { "en": "Full-boat booking", "ml": "ഫുൾ-ബോട്ട് ബുക്കിംഗ്" }
+        {
+          "en": "Full-boat booking",
+          "ml": "ഫുൾ-ബോട്ട് ബുക്കിംഗ്"
+        }
       ]
     }
   ],
   "about": {
-    "kicker": { "en": "About Vellikkeel", "ml": "വെള്ളിക്കീലിനെക്കുറിച്ച്" },
-    "heading": { "en": "Kerala's quiet mangrove country", "ml": "കേരളത്തിന്റെ ശാന്തമായ കണ്ടൽനാട്" },
+    "kicker": {
+      "en": "About Vellikkeel",
+      "ml": "വെള്ളിക്കീലിനെക്കുറിച്ച്"
+    },
+    "heading": {
+      "en": "Kerala's quiet mangrove country",
+      "ml": "കേരളത്തിന്റെ ശാന്തമായ കണ്ടൽനാട്"
+    },
     "body": {
       "en": "Tucked between low hills near Pattuvam, the Vellikkeel river winds through one of Kannur's richest mangrove belts — the largest, least-disturbed stretch in Kerala. Our boats leave from the jetty by the eco-park and drift where the forest meets the water.",
       "ml": "പട്ടുവത്തിനടുത്ത് കുന്നുകൾക്കിടയിലൂടെ ഒഴുകുന്ന വെള്ളിക്കീൽ പുഴ — കേരളത്തിലെ ഏറ്റവും വലിയ, കേടുപാടില്ലാത്ത കണ്ടൽക്കാടുകളിലൊന്ന്. ഇക്കോ-പാർക്കിനടുത്തുള്ള ജെട്ടിയിൽ നിന്നാണ് ഞങ്ങളുടെ ബോട്ടുകൾ പുറപ്പെടുന്നത്."
     },
-    "image": "/uploads/placeholder-tall.svg",
+    "image": "/uploads/DJI_0270.MP4.00_00_08_14.Still001.png",
     "imageAlt": "Mangrove roots at water level on the Vellikkeel river",
     "points": [
-      { "en": "Boats pass close enough to touch the breathing roots", "ml": "കണ്ടൽ വേരുകൾ തൊടാവുന്നത്ര അടുത്തുകൂടി ബോട്ട് കടന്നുപോകുന്നു", "color": "blue" },
-      { "en": "Kingfishers, herons and egrets at every bend", "ml": "ഓരോ വളവിലും പൊന്മാനും കൊക്കുകളും", "color": "green" },
-      { "en": "Evenings are the local secret — time your cruise for dusk", "ml": "വൈകുന്നേരങ്ങളാണ് ഇവിടത്തെ രഹസ്യം — സന്ധ്യയ്ക്ക് യാത്ര പ്ലാൻ ചെയ്യൂ", "color": "red" }
+      {
+        "en": "Boats pass close enough to touch the breathing roots",
+        "ml": "കണ്ടൽ വേരുകൾ തൊടാവുന്നത്ര അടുത്തുകൂടി ബോട്ട് കടന്നുപോകുന്നു",
+        "color": "blue"
+      },
+      {
+        "en": "Kingfishers, herons and egrets at every bend",
+        "ml": "ഓരോ വളവിലും പൊന്മാനും കൊക്കുകളും",
+        "color": "green"
+      },
+      {
+        "en": "Evenings are the local secret — time your cruise for dusk",
+        "ml": "വൈകുന്നേരങ്ങളാണ് ഇവിടത്തെ രഹസ്യം — സന്ധ്യയ്ക്ക് യാത്ര പ്ലാൻ ചെയ്യൂ",
+        "color": "red"
+      }
     ]
   },
   "gallery": {
-    "kicker": { "en": "Gallery", "ml": "ഗാലറി" },
-    "heading": { "en": "From the water", "ml": "പുഴയിൽ നിന്നുള്ള കാഴ്ചകൾ" },
+    "kicker": {
+      "en": "Gallery",
+      "ml": "ഗാലറി"
+    },
+    "heading": {
+      "en": "From the water",
+      "ml": "പുഴയിൽ നിന്നുള്ള കാഴ്ചകൾ"
+    },
     "items": [
-      { "image": "/uploads/placeholder-wide.svg", "alt": "Wide shot of a houseboat on the Vellikkeel river", "size": "big" },
-      { "image": "/uploads/placeholder-square.svg", "alt": "Mangrove roots close-up", "size": "normal" },
-      { "image": "/uploads/placeholder-square.svg", "alt": "Sunset over the backwater at Vellikkeel", "size": "normal" },
-      { "image": "/uploads/placeholder-square.svg", "alt": "Crab puttu served at the jetty", "size": "normal" },
-      { "image": "/uploads/placeholder-square.svg", "alt": "Kingfisher spotted on a mangrove cruise", "size": "normal" },
-      { "image": "/uploads/placeholder-wide.svg", "alt": "Guests on the deck of the houseboat", "size": "wide" },
-      { "image": "/uploads/placeholder-wide.svg", "alt": "Houseboat interior and dining area", "size": "wide" }
+      {
+        "image": "/uploads/DJI_0259.MP4.00_00_21_00.Still001.png",
+        "alt": "Wide shot of a houseboat on the Vellikkeel river",
+        "size": "big"
+      },
+      {
+        "image": "/uploads/Red-Mangrove-DSC_3914.png",
+        "alt": "Mangrove roots close-up",
+        "size": "normal"
+      },
+      {
+        "image": "/uploads/DJI_0293.MP4.00_00_08_22.Still001.png",
+        "alt": "Sunset over the backwater at Vellikkeel",
+        "size": "normal"
+      },
+      {
+        "image": "/uploads/Firefly (1).jpg",
+        "alt": "Crab puttu served on board",
+        "size": "normal"
+      },
+      {
+        "image": "/uploads/518315452_122210084138131500_3029059122609582710_n.jpg",
+        "alt": "Kingfisher spotted on a mangrove cruise",
+        "size": "normal"
+      },
+      {
+        "image": "/uploads/DJI_0261.MP4.00_00_06_22.Still001.png",
+        "alt": "Guests on the deck of the houseboat",
+        "size": "wide"
+      },
+      {
+        "image": "/uploads/IMG-20230710-WA0077.jpg",
+        "alt": "Houseboat interior and dining area",
+        "size": "wide"
+      },
+      {
+        "image": "/uploads/DJI_0255.MP4.00_00_25_07.Still003.png",
+        "alt": "Vellikeel waves Boat Exterior",
+        "size": "normal"
+      }
     ]
   },
   "reviews": {
-    "kicker": { "en": "Reviews", "ml": "അഭിപ്രായങ്ങൾ" },
-    "heading": { "en": "What guests say", "ml": "അതിഥികൾ പറയുന്നത്" },
+    "kicker": {
+      "en": "Reviews",
+      "ml": "അഭിപ്രായങ്ങൾ"
+    },
+    "heading": {
+      "en": "What guests say",
+      "ml": "അതിഥികൾ പറയുന്നത്"
+    },
     "rating": "4.9",
-    "ratingNote": { "en": "from recent visitors", "ml": "സമീപകാല സന്ദർശകരിൽ നിന്ന്" },
+    "ratingNote": {
+      "en": "from recent visitors",
+      "ml": "സമീപകാല സന്ദർശകരിൽ നിന്ന്"
+    },
     "items": [
       {
         "quote": "We touched the mangrove roots from the boat — the kids haven't stopped talking about it. Lunch at the jetty was superb.",
@@ -128,60 +236,153 @@
     ]
   },
   "food": {
-    "kicker": { "en": "Food", "ml": "രുചികൾ" },
-    "heading": { "en": "Tastes of the jetty", "ml": "ജെട്ടിയിലെ രുചികൾ" },
+    "kicker": {
+      "en": "Food",
+      "ml": "രുചികൾ"
+    },
+    "heading": {
+      "en": "Tastes of the jetty",
+      "ml": "ജെട്ടിയിലെ രുചികൾ"
+    },
     "sub": {
-      "en": "Cooked fresh at the waterside kitchen and served on board or at the jetty — order before you set off.",
-      "ml": "പുഴയോരത്തെ അടുക്കളയിൽ പുതുതായി തയ്യാറാക്കി ബോട്ടിലോ ജെട്ടിയിലോ വിളമ്പുന്നു — യാത്രയ്ക്ക് മുമ്പ് ഓർഡർ ചെയ്യൂ."
+      "en": "Cooked fresh from the on board kitchen and served on board or at the jetty — order before you set off.",
+      "ml": "ബോട്ടിലെ അടുക്കളയിൽ പുതുതായി തയ്യാറാക്കി ബോട്ടിലോ ജെട്ടിയിലോ വിളമ്പുന്നു — യാത്രയ്ക്ക് മുമ്പ് ഓർഡർ ചെയ്യൂ."
     },
     "items": [
       {
-        "name": { "en": "Uruliyappam", "ml": "ഉരുളിയപ്പം" },
-        "desc": { "en": "The local onion–coconut–rice griddle cake", "ml": "നാടൻ ഉള്ളി-തേങ്ങ-അരി പലഹാരം" },
-        "image": "/uploads/placeholder-circle.svg"
+        "name": {
+          "en": "Uruliyappam",
+          "ml": "ഉരുളിയപ്പം"
+        },
+        "desc": {
+          "en": "The local onion–coconut–rice griddle cake",
+          "ml": "നാടൻ ഉള്ളി-തേങ്ങ-അരി പലഹാരം"
+        },
+        "image": "/uploads/35734855_2088103971514382_6898682251584733184_n.jpg"
       },
       {
-        "name": { "en": "Crab puttu", "ml": "ഞണ്ട് പുട്ട്" },
-        "desc": { "en": "Backwater crab, steamed the Malabar way", "ml": "മലബാർ രീതിയിൽ ആവിയിൽ വേവിച്ചത്" },
-        "image": "/uploads/placeholder-circle.svg"
+        "name": {
+          "en": "Crab puttu",
+          "ml": "ഞണ്ട് പുട്ട്"
+        },
+        "desc": {
+          "en": "Backwater crab, steamed the Malabar way",
+          "ml": "മലബാർ രീതിയിൽ ആവിയിൽ വേവിച്ചത്"
+        },
+        "image": "/uploads/Firefly (1).jpg"
       },
       {
-        "name": { "en": "Prawn puttu", "ml": "ചെമ്മീൻ പുട്ട്" },
-        "desc": { "en": "Fresh prawns from the morning's catch", "ml": "രാവിലത്തെ പിടുത്തത്തിൽ നിന്നുള്ള ചെമ്മീൻ" },
-        "image": "/uploads/placeholder-circle.svg"
+        "name": {
+          "en": "Prawn puttu",
+          "ml": "ചെമ്മീൻ പുട്ട്"
+        },
+        "desc": {
+          "en": "Fresh prawns from the morning's catch",
+          "ml": "രാവിലത്തെ പിടുത്തത്തിൽ നിന്നുള്ള ചെമ്മീൻ"
+        },
+        "image": "/uploads/Picture 1743.jpg"
       },
       {
-        "name": { "en": "River fish fry", "ml": "പുഴമീൻ വറുത്തത്" },
-        "desc": { "en": "Catch of the day from the backwater", "ml": "അന്നന്നത്തെ പുഴമീൻ" },
-        "image": "/uploads/placeholder-circle.svg"
+        "name": {
+          "en": "River fish fry",
+          "ml": "പുഴമീൻ വറുത്തത്"
+        },
+        "desc": {
+          "en": "Catch of the day from the backwater",
+          "ml": "അന്നന്നത്തെ പുഴമീൻ"
+        },
+        "image": "/uploads/626197156_18141937564469228_4493966048221382429_n.jpg"
       }
     ]
   },
   "safety": {
-    "heading": { "en": "Safety on board", "ml": "ബോട്ടിലെ സുരക്ഷ" },
+    "heading": {
+      "en": "Safety on board",
+      "ml": "ബോട്ടിലെ സുരക്ഷ"
+    },
     "items": [
-      { "en": "Life jackets for every guest, all ages", "ml": "എല്ലാ അതിഥികൾക്കും ലൈഫ് ജാക്കറ്റുകൾ" },
-      { "en": "Experienced local crew on every trip", "ml": "ഓരോ യാത്രയിലും പരിചയസമ്പന്നരായ നാട്ടുകാരായ ജീവനക്കാർ" },
-      { "en": "Cruises pause in rough weather — full reschedule", "ml": "മോശം കാലാവസ്ഥയിൽ യാത്ര മാറ്റിവയ്ക്കും — പുനഃക്രമീകരണം സൗജന്യം" },
-      { "en": "Kids welcome with adult supervision", "ml": "മുതിർന്നവരുടെ മേൽനോട്ടത്തിൽ കുട്ടികൾക്ക് സ്വാഗതം" }
+      {
+        "en": "Life jackets for every guest, all ages",
+        "ml": "എല്ലാ അതിഥികൾക്കും ലൈഫ് ജാക്കറ്റുകൾ"
+      },
+      {
+        "en": "Experienced local crew on every trip",
+        "ml": "ഓരോ യാത്രയിലും പരിചയസമ്പന്നരായ നാട്ടുകാരായ ജീവനക്കാർ"
+      },
+      {
+        "en": "Cruises pause in rough weather — full reschedule",
+        "ml": "മോശം കാലാവസ്ഥയിൽ യാത്ര മാറ്റിവയ്ക്കും — പുനഃക്രമീകരണം സൗജന്യം"
+      },
+      {
+        "en": "Kids welcome with adult supervision",
+        "ml": "മുതിർന്നവരുടെ മേൽനോട്ടത്തിൽ കുട്ടികൾക്ക് സ്വാഗതം"
+      }
     ]
   },
   "bring": {
-    "heading": { "en": "What to bring", "ml": "കൊണ്ടുവരേണ്ടവ" },
+    "heading": {
+      "en": "What to bring",
+      "ml": "കൊണ്ടുവരേണ്ടവ"
+    },
     "items": [
-      { "en": "Sunscreen and a hat for daytime trips", "ml": "പകൽ യാത്രകൾക്ക് സൺസ്ക്രീനും തൊപ്പിയും" },
-      { "en": "Camera or binoculars for the birdlife", "ml": "പക്ഷികളെ കാണാൻ ക്യാമറ അല്ലെങ്കിൽ ബൈനോക്കുലർ" },
-      { "en": "Mosquito repellent for dusk cruises", "ml": "സന്ധ്യാ യാത്രകൾക്ക് കൊതുക് പ്രതിരോധം" },
-      { "en": "A change of clothes for the little ones", "ml": "കുട്ടികൾക്ക് മാറ്റാനുള്ള വസ്ത്രങ്ങൾ" }
+      {
+        "en": "Sunscreen and a hat for daytime trips",
+        "ml": "പകൽ യാത്രകൾക്ക് സൺസ്ക്രീനും തൊപ്പിയും"
+      },
+      {
+        "en": "Camera or binoculars for the birdlife",
+        "ml": "പക്ഷികളെ കാണാൻ ക്യാമറ അല്ലെങ്കിൽ ബൈനോക്കുലർ"
+      },
+      {
+        "en": "Mosquito repellent for dusk cruises",
+        "ml": "സന്ധ്യാ യാത്രകൾക്ക് കൊതുക് പ്രതിരോധം"
+      },
+      {
+        "en": "A change of clothes for the little ones",
+        "ml": "കുട്ടികൾക്ക് മാറ്റാനുള്ള വസ്ത്രങ്ങൾ"
+      }
     ]
   },
   "plan": {
-    "kicker": { "en": "Visit & book", "ml": "സന്ദർശനം & ബുക്കിംഗ്" },
-    "heading": { "en": "Plan your cruise", "ml": "നിങ്ങളുടെ യാത്ര പ്ലാൻ ചെയ്യൂ" },
+    "kicker": {
+      "en": "Visit & book",
+      "ml": "സന്ദർശനം & ബുക്കിംഗ്"
+    },
+    "heading": {
+      "en": "Plan your cruise",
+      "ml": "നിങ്ങളുടെ യാത്ര പ്ലാൻ ചെയ്യൂ"
+    },
     "transport": [
-      { "mode": { "en": "By rail", "ml": "ട്രെയിൻ" }, "detail": { "en": "Kannur Railway Station — 19 km", "ml": "കണ്ണൂർ റെയിൽവേ സ്റ്റേഷൻ — 19 കി.മീ" } },
-      { "mode": { "en": "By bus", "ml": "ബസ്" }, "detail": { "en": "Taliparamba Bus Stand — 6 km", "ml": "തളിപ്പറമ്പ് ബസ് സ്റ്റാൻഡ് — 6 കി.മീ" } },
-      { "mode": { "en": "By air", "ml": "വിമാനം" }, "detail": { "en": "Kannur International Airport — 42 km", "ml": "കണ്ണൂർ അന്താരാഷ്ട്ര വിമാനത്താവളം — 42 കി.മീ" } }
+      {
+        "mode": {
+          "en": "By rail",
+          "ml": "ട്രെയിൻ"
+        },
+        "detail": {
+          "en": "Kannur Railway Station — 19 km",
+          "ml": "കണ്ണൂർ റെയിൽവേ സ്റ്റേഷൻ — 19 കി.മീ"
+        }
+      },
+      {
+        "mode": {
+          "en": "By bus",
+          "ml": "ബസ്"
+        },
+        "detail": {
+          "en": "Taliparamba Bus Stand — 6 km",
+          "ml": "തളിപ്പറമ്പ് ബസ് സ്റ്റാൻഡ് — 6 കി.മീ"
+        }
+      },
+      {
+        "mode": {
+          "en": "By air",
+          "ml": "വിമാനം"
+        },
+        "detail": {
+          "en": "Kannur International Airport — 42 km",
+          "ml": "കണ്ണൂർ അന്താരാഷ്ട്ര വിമാനത്താവളം — 42 കി.മീ"
+        }
+      }
     ],
     "note": {
       "en": "No prices online — we reply with a personal quote, usually within the hour.",
