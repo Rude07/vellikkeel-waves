@@ -8,6 +8,7 @@ backend:
   name: github
   repo: Rude07/vellikkeel-waves
   branch: main
+  base_url: https://sveltia-cms-auth.rudeep-ramesh0007.workers.dev
 
 site_url: https://www.vellikkeelwaves.in
 display_url: https://www.vellikkeelwaves.in
