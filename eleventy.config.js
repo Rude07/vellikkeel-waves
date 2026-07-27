@@ -15,6 +15,14 @@ module.exports = function (eleventyConfig) {
     return /^[A-Za-z0-9_-]{11}$/.test(v) ? v : "";
   });
 
+  // Accept only real video files as a background video source.
+  // Google Drive / YouTube / page links are ignored so the still image shows instead.
+  eleventyConfig.addFilter("videoSrc", (url) => {
+    const v = String(url || "").trim();
+    if (!v) return "";
+    return /\.(mp4|webm|mov)(\?.*)?$/i.test(v) ? v : "";
+  });
+
   // Build date for sitemap
   eleventyConfig.addGlobalData("buildDate", () => new Date().toISOString().split("T")[0]);
 
