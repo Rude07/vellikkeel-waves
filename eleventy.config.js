@@ -8,11 +8,11 @@ module.exports = function (eleventyConfig) {
 
   // Extract a YouTube video ID from any common URL format (or a bare ID)
   eleventyConfig.addFilter("ytId", (url) => {
-    const s = String(url || "").trim();
-    if (!s) return "";
-    const m = s.match(/(?:youtu\.be\/|v=|\/embed\/|\/shorts\/|\/live\/)([A-Za-z0-9_-]{11})/);
+    const v = String(url || "").trim();
+    if (!v) return "";
+    const m = v.match(/(?:youtu\.be\/|v=|\/embed\/|\/shorts\/|\/live\/)([A-Za-z0-9_-]{11})/);
     if (m) return m[1];
-    return /^[A-Za-z0-9_-]{11}$/.test(s) ? s : "";
+    return /^[A-Za-z0-9_-]{11}$/.test(v) ? v : "";
   });
 
   // Build date for sitemap
