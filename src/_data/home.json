@@ -176,43 +176,87 @@
         "size": "big"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/Red-Mangrove-DSC_3914.png",
         "alt": "Mangrove roots close-up",
         "size": "normal"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/DJI_0293.MP4.00_00_08_22.Still001.png",
         "alt": "Sunset over the backwater at Vellikkeel",
         "size": "normal"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/Firefly (1).jpg",
         "alt": "Crab puttu served on board",
         "size": "normal"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/518315452_122210084138131500_3029059122609582710_n.jpg",
         "alt": "Kingfisher spotted on a mangrove cruise",
         "size": "normal"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/DJI_0261.MP4.00_00_06_22.Still001.png",
         "alt": "Guests on the deck of the houseboat",
         "size": "wide"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/IMG-20230710-WA0077.jpg",
         "alt": "Houseboat interior and dining area",
         "size": "wide"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/DJI_0255.MP4.00_00_25_07.Still003.png",
         "alt": "Vellikeel waves Boat Exterior",
         "size": "normal"
       },
       {
+        "videoUrl": "",
         "image": "/uploads/DJI_0274.MP4.00_00_13_12.Still001.png",
         "alt": "Vellikkeel waves houseboat in the middle of mangroves",
+        "size": "normal"
+      },
+      {
+        "videoUrl": "",
+        "image": "/uploads/DJI_0291.MP4.00_00_28_24.Still001.png",
+        "alt": "vellikkeel waves houseboat on sunset cruise",
+        "size": "normal"
+      },
+      {
+        "videoUrl": "https://www.youtube.com/watch?v=WdjlyW_Pwhc",
+        "image": "",
+        "alt": "Vellikkeel waves House Boat | Devika Akhil Vlog | One day trip",
+        "size": "normal"
+      },
+      {
+        "videoUrl": "https://www.youtube.com/watch?v=W_a9iEJthRU",
+        "image": "",
+        "alt": "Vellikkeel waves house boat kannur",
+        "size": "normal"
+      },
+      {
+        "videoUrl": "https://www.youtube.com/shorts/q8FY1V5kkUY",
+        "image": "",
+        "alt": "One day trip, Vellikkeel waves",
+        "size": "normal"
+      },
+      {
+        "videoUrl": "https://www.youtube.com/shorts/q2M--4jgYbY",
+        "image": "",
+        "alt": "safety check at vellikkeel waves",
+        "size": "normal"
+      },
+      {
+        "videoUrl": "https://www.youtube.com/shorts/yO-5Yjmqf-E",
+        "image": "",
+        "alt": "budget house boat trip kannur , Vellikkeel waves",
         "size": "normal"
       }
     ]
