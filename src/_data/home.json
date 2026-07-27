@@ -13,6 +13,7 @@
       "ml": "വെള്ളിക്കീൽ പുഴയിൽ ഹൗസ്ബോട്ട് പകൽയാത്രകൾ, സൂര്യാസ്തമയ ക്രൂയിസുകൾ, രാത്രി താമസം — കണ്ടൽ വേരുകൾ തൊടാവുന്നത്ര അടുത്ത്."
     },
     "image": "/uploads/DJI_0276.MP4.00_00_04_04.Still001.png",
+    "video": "",
     "imageAlt": "Houseboat gliding through the Vellikkeel mangrove canal in Kannur, Kerala"
   },
   "cruisesIntro": {
@@ -157,83 +158,60 @@
       "en": "From the water",
       "ml": "പുഴയിൽ നിന്നുള്ള കാഴ്ചകൾ"
     },
+    "pageSub": {
+      "en": "Every photo and video from the Vellikkeel river — cruises, mangroves, birdlife and food from the jetty kitchen.",
+      "ml": "വെള്ളിക്കീൽ പുഴയിൽ നിന്നുള്ള എല്ലാ ചിത്രങ്ങളും വീഡിയോകളും — ക്രൂയിസുകൾ, കണ്ടൽക്കാടുകൾ, പക്ഷികൾ, ജെട്ടിയിലെ രുചികൾ."
+    },
+    "ctaLabel": {
+      "en": "See the full gallery",
+      "ml": "മുഴുവൻ ഗാലറി കാണൂ"
+    },
+    "autoRotate": true,
+    "rotateSeconds": 7,
     "items": [
       {
-        "videoUrl": "",
         "image": "/uploads/DJI_0259.MP4.00_00_21_00.Still001.png",
         "alt": "Wide shot of a houseboat on the Vellikkeel river",
         "size": "big"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/Red-Mangrove-DSC_3914.png",
         "alt": "Mangrove roots close-up",
         "size": "normal"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/DJI_0293.MP4.00_00_08_22.Still001.png",
         "alt": "Sunset over the backwater at Vellikkeel",
         "size": "normal"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/Firefly (1).jpg",
         "alt": "Crab puttu served on board",
         "size": "normal"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/518315452_122210084138131500_3029059122609582710_n.jpg",
         "alt": "Kingfisher spotted on a mangrove cruise",
         "size": "normal"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/DJI_0261.MP4.00_00_06_22.Still001.png",
         "alt": "Guests on the deck of the houseboat",
         "size": "wide"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/IMG-20230710-WA0077.jpg",
         "alt": "Houseboat interior and dining area",
         "size": "wide"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/DJI_0255.MP4.00_00_25_07.Still003.png",
         "alt": "Vellikeel waves Boat Exterior",
         "size": "normal"
       },
       {
-        "videoUrl": "",
         "image": "/uploads/DJI_0274.MP4.00_00_13_12.Still001.png",
         "alt": "Vellikkeel waves houseboat in the middle of mangroves",
-        "size": "normal"
-      },
-      {
-        "videoUrl": "https://www.youtube.com/watch?v=WdjlyW_Pwhc",
-        "image": "",
-        "alt": "ഫാമിലിയോടൊപ്പം ഒരു ബോട്ട് യാത്ര | Vellikkeel waves House Boat Tour",
-        "size": "normal"
-      },
-      {
-        "videoUrl": "https://www.youtube.com/watch?v=W_a9iEJthRU",
-        "image": "",
-        "alt": "Vellikkeel Waves - Houseboat",
-        "size": "normal"
-      },
-      {
-        "videoUrl": "https://www.youtube.com/watch?v=NjOLYp_qKtc",
-        "image": "",
-        "alt": "Vellikkeel waves HouseBoat",
-        "size": "normal"
-      },
-      {
-        "videoUrl": "https://www.youtube.com/shorts/yO-5Yjmqf-E",
-        "image": "",
-        "alt": "Vellikkeel waves house boat one day trip",
         "size": "normal"
       }
     ]
