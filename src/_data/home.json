@@ -170,6 +170,7 @@
     "rotateSeconds": 7,
     "items": [
       {
+        "videoUrl": "",
         "image": "/uploads/DJI_0259.MP4.00_00_21_00.Still001.png",
         "alt": "Wide shot of a houseboat on the Vellikkeel river",
         "size": "big"
