@@ -34,3 +34,24 @@
     });
   }
 })();
+
+// Gallery videos: click a thumbnail to load and play the YouTube embed
+(function () {
+  document.querySelectorAll(".g-video").forEach(function (tile) {
+    tile.addEventListener("click", function () {
+      if (tile.classList.contains("playing")) return;
+      var id = tile.getAttribute("data-yt");
+      if (!id) return;
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id +
+        "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+      frame.title = "Vellikkeel Waves video";
+      frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      frame.allowFullscreen = true;
+      frame.loading = "lazy";
+      tile.classList.add("playing");
+      tile.innerHTML = "";
+      tile.appendChild(frame);
+    });
+  });
+})();
