@@ -1,4 +1,4 @@
-/* Vellikkeel Waves â€” design system extracted from original mockup */
+/* Vellikkeel Waves Ã¢â‚¬â€ design system extracted from original mockup */
 :root {
   --cream: #fbf7ec;
   --cream-2: #fdfbf4;
@@ -273,4 +273,36 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .brand-name { font-size: 14px; }
   .hero h1 { font-size: 26px; }
   .section-h { font-size: 24px; }
+}
+
+/* ===== Gallery videos ===== */
+.g-video { position: relative; cursor: pointer; background: #0d1b28; }
+.g-video img { transition: transform .35s ease, opacity .25s ease; }
+.g-video:hover img { transform: scale(1.04); opacity: .82; }
+.g-play {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  display: grid; place-items: center;
+  background: linear-gradient(180deg, rgba(10,25,40,.10), rgba(10,25,40,.42));
+  border: 0; cursor: pointer; padding: 0;
+}
+.g-play span {
+  width: 54px; height: 54px; border-radius: 50%;
+  background: rgba(255,255,255,.94);
+  box-shadow: 0 4px 18px rgba(10,25,40,.4);
+  display: block; position: relative;
+  transition: transform .2s ease, background .2s ease;
+}
+.g-play span::after {
+  content: ""; position: absolute; top: 50%; left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid; border-width: 10px 0 10px 17px;
+  border-color: transparent transparent transparent var(--red);
+}
+.g-video:hover .g-play span { transform: scale(1.1); background: #fff; }
+.g-video.playing { cursor: default; }
+.g-video.playing .g-play { display: none; }
+.g-video iframe { width: 100%; height: 100%; border: 0; display: block; }
+@media (max-width: 640px) {
+  .g-play span { width: 44px; height: 44px; }
+  .g-play span::after { border-width: 8px 0 8px 14px; }
 }
