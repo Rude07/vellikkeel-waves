@@ -76,7 +76,7 @@ collections:
               - &bi_heading { name: heading, label: Heading, widget: object, fields: [{ name: en, label: English, widget: string }, { name: ml, label: Malayalam, widget: string }] }
               - &bi_sub { name: sub, label: Subtext, widget: object, fields: [{ name: en, label: English, widget: text }, { name: ml, label: Malayalam, widget: text }] }
               - { name: image, label: "Hero photo (also used as the video's first frame)", widget: image }
-              - { name: video, label: "Hero background video (MP4, optional)", widget: file, required: false, hint: "Plays automatically, muted, on loop. Keep it under 8 MB — about 10-20 seconds, 1280x720, no audio track. Leave empty to show just the photo." }
+              - { name: video, label: "Hero background video (MP4 file only, optional)", widget: file, required: false, hint: "Must be an actual MP4 file, or a path like /uploads/hero-loop.mp4. Google Drive, YouTube and Vimeo links will NOT work here and are ignored. Keep it under 8 MB: 10-20 seconds, 1280x720, no audio track. Leave empty to show just the photo." }
               - { name: imageAlt, label: "Photo description (for Google & accessibility)", widget: string }
           - name: cruisesIntro
             label: "Cruises — section intro"
