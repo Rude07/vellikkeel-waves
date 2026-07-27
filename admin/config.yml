@@ -57,6 +57,8 @@ collections:
               - { name: homeDescription, label: "Homepage meta description", widget: text }
               - { name: aboutTitle, label: "About page title tag", widget: string }
               - { name: aboutDescription, label: "About page meta description", widget: text }
+              - { name: galleryTitle, label: "Gallery page title tag", widget: string }
+              - { name: galleryDescription, label: "Gallery page meta description", widget: text }
               - { name: keywords, label: "Keywords", widget: string }
 
   - name: homepage
@@ -73,7 +75,8 @@ collections:
               - &bi_kicker { name: kicker, label: Kicker, widget: object, fields: [{ name: en, label: English, widget: string }, { name: ml, label: Malayalam, widget: string }] }
               - &bi_heading { name: heading, label: Heading, widget: object, fields: [{ name: en, label: English, widget: string }, { name: ml, label: Malayalam, widget: string }] }
               - &bi_sub { name: sub, label: Subtext, widget: object, fields: [{ name: en, label: English, widget: text }, { name: ml, label: Malayalam, widget: text }] }
-              - { name: image, label: "Hero photo", widget: image }
+              - { name: image, label: "Hero photo (also used as the video's first frame)", widget: image }
+              - { name: video, label: "Hero background video (MP4, optional)", widget: file, required: false, hint: "Plays automatically, muted, on loop. Keep it under 8 MB — about 10-20 seconds, 1280x720, no audio track. Leave empty to show just the photo." }
               - { name: imageAlt, label: "Photo description (for Google & accessibility)", widget: string }
           - name: cruisesIntro
             label: "Cruises — section intro"
@@ -116,14 +119,20 @@ collections:
             fields:
               - *bi_kicker
               - *bi_heading
+              - { name: pageSub, label: "Full gallery page — intro line", widget: object, fields: [{ name: en, label: English, widget: text }, { name: ml, label: Malayalam, widget: text }] }
+              - { name: ctaLabel, label: "Button text linking to the full gallery", widget: object, fields: [{ name: en, label: English, widget: string }, { name: ml, label: Malayalam, widget: string }] }
+              - { name: autoRotate, label: "Shuffle the 7 homepage tiles automatically", widget: boolean, default: true, hint: "ON = the homepage tiles keep changing to other items from the list below. Turn OFF to keep the first 7 fixed." }
+              - { name: rotateSeconds, label: "Seconds between shuffles", widget: number, default: 7, value_type: int, min: 3, max: 60, hint: "Only used when shuffle is ON. 7 is a good default." }
               - name: items
-                label: Photos
+                label: "Photos & videos"
                 widget: list
+                label_singular: "item"
+                hint: "The first 7 items fill the homepage tiles. Everything here appears on the full gallery page."
                 fields:
-                  - { name: videoUrl, label: "YouTube link (leave empty for a photo tile)", widget: string, required: false, hint: "Paste any YouTube link. If filled, this tile becomes a playable video." }
-                  - { name: image, label: "Photo / video cover image", widget: image, required: false, hint: "For photo tiles this is the photo. For video tiles it is optional — leave empty to use the YouTube thumbnail." }
+                  - { name: videoUrl, label: "YouTube link (leave empty for a photo)", widget: string, required: false, hint: "Paste any YouTube link and this item becomes a playable video." }
+                  - { name: image, label: "Photo / video cover image", widget: image, required: false, hint: "For a photo item this is the photo. For a video it is optional — leave empty to use the YouTube thumbnail." }
                   - { name: alt, label: "Description (for Google & accessibility)", widget: string }
-                  - { name: size, label: "Tile size", widget: select, options: [normal, wide, big], default: normal }
+                  - { name: size, label: "Tile size (full gallery page)", widget: select, options: [normal, wide, big], default: normal }
           - name: reviews
             label: "Reviews"
             widget: object
