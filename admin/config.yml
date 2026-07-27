@@ -120,8 +120,9 @@ collections:
                 label: Photos
                 widget: list
                 fields:
-                  - { name: image, label: Photo, widget: image }
-                  - { name: alt, label: "Photo description (for Google & accessibility)", widget: string }
+                  - { name: videoUrl, label: "YouTube link (leave empty for a photo tile)", widget: string, required: false, hint: "Paste any YouTube link. If filled, this tile becomes a playable video." }
+                  - { name: image, label: "Photo / video cover image", widget: image, required: false, hint: "For photo tiles this is the photo. For video tiles it is optional — leave empty to use the YouTube thumbnail." }
+                  - { name: alt, label: "Description (for Google & accessibility)", widget: string }
                   - { name: size, label: "Tile size", widget: select, options: [normal, wide, big], default: normal }
           - name: reviews
             label: "Reviews"
