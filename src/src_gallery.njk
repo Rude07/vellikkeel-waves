@@ -1,0 +1,49 @@
+---
+layout: base.njk
+permalink: /gallery/
+seoKey: gallery
+---
+
+{% block extraHead %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "Gallery", "item": "{{ site.url }}/gallery/"}
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="wrap section section-first">
+  <p class="kicker"><span class="l-en">{{ home.gallery.kicker.en }}</span><span class="l-ml">{{ home.gallery.kicker.ml }}</span></p>
+  <h1 class="section-h"><span class="l-en">{{ home.gallery.heading.en }}</span><span class="l-ml">{{ home.gallery.heading.ml }}</span></h1>
+  <p class="section-sub"><span class="l-en">{{ home.gallery.pageSub.en }}</span><span class="l-ml">{{ home.gallery.pageSub.ml }}</span></p>
+
+  <div class="gallery-grid gallery-all">
+    {% for g in home.gallery.items %}
+      {% set vid = g.videoUrl | ytId %}
+      {% set cover = g.image if g.image else ("https://i.ytimg.com/vi/" ~ vid ~ "/hqdefault.jpg") %}
+      {% if cover %}
+    <div class="g-item{% if g.size == 'big' %} g-big{% elif g.size == 'wide' %} g-wide{% endif %}{% if vid %} g-video{% endif %}" data-yt="{{ vid }}">
+      <img src="{{ cover }}" alt="{{ g.alt }}"{% if loop.index0 > 3 %} loading="lazy"{% endif %}>
+      {% if vid %}<button type="button" class="g-play" aria-label="Play video: {{ g.alt }}"><span></span></button>{% endif %}
+    </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <p class="gallery-cta">
+    <a href="/#gallery" class="card-link"><span class="l-en">← Back to home</span><span class="l-ml">← ഹോമിലേക്ക്</span></a>
+  </p>
+</section>
+
+<section class="wrap section" style="padding-bottom:80px">
+  <div class="cta-band">
+    <h2><span class="l-en">Come see it yourself</span><span class="l-ml">നേരിട്ട് കാണാൻ വരൂ</span></h2>
+    <p><span class="l-en">Message us on WhatsApp and we'll plan your cruise on the Vellikkeel river.</span><span class="l-ml">വാട്സ്ആപ്പിൽ മെസേജ് ചെയ്യൂ — നിങ്ങളുടെ യാത്ര ഞങ്ങൾ പ്ലാൻ ചെയ്യാം.</span></p>
+    <a href="https://wa.me/{{ site.whatsappNumber | waDigits }}?text={{ site.whatsappGreeting | urlencode }}" target="_blank" rel="noopener" class="btn btn-green"><span class="l-en">WhatsApp us</span><span class="l-ml">വാട്സ്ആപ്പ് ചെയ്യൂ</span></a>
+  </div>
+</section>
