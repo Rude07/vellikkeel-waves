@@ -275,21 +275,27 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .section-h { font-size: 24px; }
 }
 
-/* ===== Gallery videos ===== */
-.g-video { position: relative; cursor: pointer; background: #0d1b28; }
+/* ===== Hero background video ===== */
+.hero-still { z-index: 0; }
+.hero-video { z-index: 1; object-fit: cover; }
+.hero-shade { z-index: 2; }
+.hero-content { z-index: 3; }
+@media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+
+/* ===== Gallery: video tiles ===== */
+.g-item { position: relative; transition: opacity .4s ease; }
+.g-item.swapping { opacity: 0; }
+.g-video { cursor: pointer; background: #0d1b28; }
 .g-video img { transition: transform .35s ease, opacity .25s ease; }
 .g-video:hover img { transform: scale(1.04); opacity: .82; }
 .g-play {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  display: grid; place-items: center;
-  background: linear-gradient(180deg, rgba(10,25,40,.10), rgba(10,25,40,.42));
-  border: 0; cursor: pointer; padding: 0;
+  display: grid; place-items: center; padding: 0; border: 0; cursor: pointer;
+  background: linear-gradient(180deg, rgba(10,25,40,.08), rgba(10,25,40,.42));
 }
 .g-play span {
-  width: 54px; height: 54px; border-radius: 50%;
-  background: rgba(255,255,255,.94);
-  box-shadow: 0 4px 18px rgba(10,25,40,.4);
-  display: block; position: relative;
+  width: 54px; height: 54px; border-radius: 50%; display: block; position: relative;
+  background: rgba(255,255,255,.94); box-shadow: 0 4px 18px rgba(10,25,40,.4);
   transition: transform .2s ease, background .2s ease;
 }
 .g-play span::after {
@@ -302,6 +308,11 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .g-video.playing { cursor: default; }
 .g-video.playing .g-play { display: none; }
 .g-video iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ===== Gallery: CTA + full gallery page ===== */
+.gallery-cta { margin: 22px 0 0; }
+.gallery-all { grid-auto-rows: 190px; }
+@media (max-width: 700px) { .gallery-all { grid-auto-rows: 130px; } }
 @media (max-width: 640px) {
   .g-play span { width: 44px; height: 44px; }
   .g-play span::after { border-width: 8px 0 8px 14px; }
