@@ -1,4 +1,4 @@
-/* Vellikkeel Waves Ã¢â‚¬â€ design system extracted from original mockup */
+/* Vellikkeel Waves ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â design system extracted from original mockup */
 :root {
   --cream: #fbf7ec;
   --cream-2: #fdfbf4;
@@ -19,7 +19,7 @@
   --navy: #14263c;
   --sky: #eef4fb;
 
-  /* ── Malayalam font. Change ONLY this line to swap the Malayalam typeface. ── */
+  /* â”€â”€ Malayalam font. Change ONLY this line to swap the Malayalam typeface. â”€â”€ */
   --font-ml: 'Anek Malayalam', 'Noto Sans Malayalam', 'Malayalam Sangam MN', system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
@@ -341,7 +341,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 h1 .l-ml, h2 .l-ml, h3 .l-ml,
 .brand-name .l-ml, .footer-brand span .l-ml { font-weight: 800; }
 
-/* Malayalam conjuncts stack taller than Latin — give the lines headroom */
+/* Malayalam conjuncts stack taller than Latin â€” give the lines headroom */
 body.ml h1, body.ml h2, body.ml h3 { line-height: 1.34; }
 body.ml .hero h1 { line-height: 1.26; }
 body.ml .kicker, body.ml .hero-kicker { letter-spacing: normal; text-transform: none; }
